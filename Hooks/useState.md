@@ -110,7 +110,10 @@ const [darkMode, setDarkMode] = useState(false);
 
 ## Important Points
 
-* State updates are asynchronous.
+* State updates are asynchronous because React batches and schedules state changes for better performance instead of updating the state immediately when setState is called.
+
+Batching is a React optimization technique where multiple state updates are grouped together and processed in a single re-render to improve performance.
+
 * Updating state causes a re-render.
 * Never update state directly.
 * Always use the setter function.
