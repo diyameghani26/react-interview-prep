@@ -183,7 +183,8 @@ useEffect(() => {
 
 ### What is useEffect?
 
-useEffect is a React Hook used to perform side effects in functional components.
+
+useEffect is a React Hook that allows functional components to perform side effects after rendering and manage cleanup when necessary.
 
 ### What is a side effect?
 
@@ -207,6 +208,5 @@ Yes. A component can contain multiple useEffect Hooks.
 
 ---
 
-## One-Line Interview Answer
 
-useEffect is a React Hook that allows functional components to perform side effects after rendering and manage cleanup when necessary.
+
