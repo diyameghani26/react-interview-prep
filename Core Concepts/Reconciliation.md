@@ -84,6 +84,8 @@ React uses a Diffing Algorithm to identify changes between them.
 
 Reconciliation uses the results of Diffing to update the Real DOM.
 
+Diff Algorithm -> whenever their is any change in any state variable react will find the difference between virtual dom and it wil rerender our component it will update the dom.
+
 ---
 
 ## Reconciliation Rules
@@ -186,23 +188,23 @@ With keys, React can track elements correctly.
 
 ## Reconciliation vs Diffing
 
-| Reconciliation                  | Diffing                        |
-| ------------------------------- | ------------------------------ |
-| Complete process of updating UI | Process of finding differences |
-| Uses diffing internally         | Compares Virtual DOM trees     |
-| Updates Real DOM                | Finds changes                  |
-| Higher-level concept            | Part of reconciliation         |
+ Reconciliation                  | Diffing                        
+ ------------------------------- | ------------------------------ 
+ Complete process of updating UI | Process of finding differences 
+ Uses diffing internally         | Compares Virtual DOM trees     
+ Updates Real DOM                | Finds changes                  
+ Higher-level concept            | Part of reconciliation         
 
 ---
 
 ## Virtual DOM vs Reconciliation
 
-| Virtual DOM                      | Reconciliation          |
-| -------------------------------- | ----------------------- |
-| JavaScript representation of DOM | Process of updating DOM |
-| Stores UI structure              | Updates UI efficiently  |
-| Used for comparison              | Uses comparison results |
-| Lightweight copy of DOM          | Update mechanism        |
+ Virtual DOM                      | Reconciliation          
+ -------------------------------- | ----------------------- 
+ JavaScript representation of DOM | Process of updating DOM 
+ Stores UI structure              | Updates UI efficiently  
+ Used for comparison              | Uses comparison results 
+ Lightweight copy of DOM          | Update mechanism        
 
 ---
 
@@ -290,7 +292,4 @@ Diffing finds the changes, and Reconciliation uses those changes to update the R
 
 ---
 
-## One-Line Interview Answer
-
-Reconciliation is the process React uses to compare old and new Virtual DOM trees and efficiently update only the changed parts of the Real DOM.
 
