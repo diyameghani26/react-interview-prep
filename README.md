@@ -38,7 +38,7 @@ Q: What is Tailwind CSS and how is it different from traditional CSS?
 A: "Tailwind is a utility-first CSS framework where you style elements directly in HTML/JSX using predefined classes like flex, p-4, text-center — instead of writing separate CSS files. It speeds up development a lot.
 
 Q: How do you handle responsiveness in Tailwind?
-A: "Using breakpoint prefixes like sm:, md:, lg: — for example, I built a separate mobile and desktop PlayerBar layout in Vibify using these responsive classes."
+A: Using breakpoint prefixes like sm:, md:, lg: 
 
 Q: What is JIT mode in Tailwind?
 A: "Just-In-Time mode generates styles on-demand as you write classes, instead of generating the entire stylesheet upfront — making builds faster and CSS files smaller."
@@ -60,7 +60,7 @@ Q: What is Redux and why is it used?
 A: "Redux is a state management library that stores your entire app's state in a single centralized store, making it predictable and easier to debug across components that don't share a direct parent-child relationship."
 
 Q: Redux vs Context API — when would you use which?
-A: "Context API is good for simple, low-frequency state like theme or auth status. Redux is better for complex, frequently-updated state shared across many components — like a shopping cart. I implemented Redux Toolkit in YumDrop for cart management, including add/remove item by ID."
+A: "Context API is good for simple, low-frequency state like theme or auth status. Redux is better for complex, frequently-updated state shared across many components — like a shopping cart. 
 
 Q: What is Redux Toolkit?
 A: It's the official, simplified way to write Redux logic — it reduces boilerplate using createSlice and configureStore.
@@ -68,7 +68,7 @@ A: It's the official, simplified way to write Redux logic — it reduces boilerp
 
 🟡 LEARNING TOPICS (be honest, show direction — don't bluff)
 
-Next.js
+Next.js0
 
 Q: What is Next.js and why use it over React?
 A: In plain React, the browser downloads a blank HTML page and JavaScript builds the content on the client side — that's CSR. Next.js supports SSR, where the HTML is fully rendered on the server before being sent to the browser, so the user sees content immediately and search engines can crawl it properly. This improves both performance and SEO compared to plain client-side rendered React.
