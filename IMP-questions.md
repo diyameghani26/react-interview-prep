@@ -26,3 +26,19 @@ Answer: Memoization is an optimization technique used to avoid unnecessary compu
 6. How does React handle batching of state updates?
 
 Answer: React improves performance by batching multiple state updates into a single re-render. Instead of re-rendering the component after every setState call, React groups multiple state updates together and updates the UI only once. This reduces unnecessary renders and makes the application faster. In modern React (React 18+), automatic batching works for event handlers, promises, setTimeout, and other asynchronous operations as well.
+
+7. What are Custom Hooks and when would you use them?
+
+Answer: Custom Hooks are JavaScript functions that start with use and allow you to reuse stateful logic across multiple React components. They can use other React Hooks like useState, useEffect, and useContext internally. Custom Hooks help keep code clean, reusable, and easier to maintain by avoiding duplicate logic. They are commonly used when the same functionality, such as data fetching, form handling, authentication, or window resizing, is needed in multiple components.
+
+8. How does React implement lazy loading and code splitting?
+
+Answer: React implements lazy loading and code splitting to improve application performance by loading only the code that is needed. Code splitting breaks the application into smaller JavaScript bundles instead of one large bundle. Lazy loading loads these bundles only when a component is required, using React.lazy() and Suspense. This reduces the initial load time, improves performance, and provides a better user experience, especially in large applications.
+
+9. What is useLayoutEffect and how is it different from useEffect?
+
+Answer: useLayoutEffect is a React Hook that runs synchronously after the DOM has been updated but before the browser paints the screen. It is mainly used when you need to measure or modify the DOM before the user sees it, such as calculating element sizes or preventing visual flickering. In contrast, useEffect runs after the browser has painted the updated UI, making it suitable for tasks like API calls, event listeners, and timers. Since useLayoutEffect blocks the browser from painting until it finishes, it should only be used when necessary.
+
+10. How does React support Concurrent Rendering?
+
+Answer: Concurrent Rendering is a feature introduced in React 18 that allows React to prepare multiple versions of the UI and prioritize important updates. Instead of blocking the entire application while rendering, React can pause, resume, or interrupt rendering to handle high-priority tasks first, such as user interactions. This makes applications more responsive and provides a smoother user experience, especially when rendering large or complex components.
