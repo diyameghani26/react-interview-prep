@@ -42,3 +42,19 @@ Answer: useLayoutEffect is a React Hook that runs synchronously after the DOM ha
 10. How does React support Concurrent Rendering?
 
 Answer: Concurrent Rendering is a feature introduced in React 18 that allows React to prepare multiple versions of the UI and prioritize important updates. Instead of blocking the entire application while rendering, React can pause, resume, or interrupt rendering to handle high-priority tasks first, such as user interactions. This makes applications more responsive and provides a smoother user experience, especially when rendering large or complex components.
+
+11. What is Server-Side Rendering (SSR) in React?
+
+Answer: Server-Side Rendering (SSR) is a rendering technique where React generates the HTML on the server and sends the fully rendered page to the browser. This allows users to see the page content immediately without waiting for JavaScript to load. SSR improves the initial page load time, enhances SEO because search engines can easily crawl the content, and provides a better user experience on slower networks. Frameworks like Next.js use SSR to build fast and SEO-friendly React applications.
+
+12. What is Lifting State Up in React?
+
+Answer: Lifting State Up is the process of moving state from a child component to its closest common parent component so that multiple child components can share and access the same data. Instead of each child maintaining its own separate state, the parent manages the state and passes it down to the children through props. This ensures a single source of truth, keeps data synchronized across components, and makes state management easier.
+
+13. What is Prop Drilling in React and how can you avoid it?
+
+Answer: Prop Drilling is the process of passing data from a parent component to a deeply nested child component through multiple intermediate components, even if those intermediate components don't use the data. This can make the code difficult to read, maintain, and manage. To avoid prop drilling, React provides the Context API, which allows data to be shared directly with any component in the component tree without passing props manually through every level. For larger applications, state management libraries like Redux or Zustand can also be used.
+
+14. What is Suspense in React?
+
+Answer: Suspense is a React component that lets you display a fallback UI, such as a loading spinner or loading message, while waiting for a component or data to load. It is commonly used with React.lazy() for lazy loading components. Instead of showing a blank screen, Suspense displays the fallback content until the requested component is ready, providing a smoother and better user experience.
