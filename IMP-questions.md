@@ -58,3 +58,55 @@ Answer: Prop Drilling is the process of passing data from a parent component to 
 14. What is Suspense in React?
 
 Answer: Suspense is a React component that lets you display a fallback UI, such as a loading spinner or loading message, while waiting for a component or data to load. It is commonly used with React.lazy() for lazy loading components. Instead of showing a blank screen, Suspense displays the fallback content until the requested component is ready, providing a smoother and better user experience.
+
+15. What is the difference between Redux, Context API, and Zustand?
+
+Answer: Redux, Context API, and Zustand are all used for state management in React, but they serve different purposes. The Context API is built into React and is best for sharing simple global data like themes, authentication, or language settings. Redux is a powerful state management library designed for large and complex applications where many components need to share and update state in a predictable way. Zustand is a lightweight and modern state management library that offers a simpler API than Redux while still providing global state management with less boilerplate code. The choice depends on the size and complexity of the application.
+
+16. What is Hydration in React?
+
+Answer: Hydration is the process of attaching React's JavaScript to the HTML that was already rendered on the server. It is mainly used with Server-Side Rendering (SSR). When the page loads, users can immediately see the HTML, and then React hydrates it by adding event listeners and making the page fully interactive. This improves the initial loading speed while still providing a dynamic React application.
+
+see mujhe ye bh cover krns h 
+ab inke answers one by one 
+
+Since you added SSR, Lifting State Up, Prop Drilling, and Suspense, a clean commit message would be:
+
+git commit -m "Add React interview notes on SSR, lifting state, prop drilling, and Suspense"
+
+Or, if you want to keep your GitHub history super professional:
+
+git commit -m "Add advanced React interview concepts"
+
+I prefer the first one because it's descriptive and makes your commit history easy to understand.
+
+next
+15. What is the difference between Redux, Context API, and Zustand?
+
+Answer:
+
+Redux, Context API, and Zustand are all used for state management in React, but they serve different purposes. The Context API is built into React and is best for sharing simple global data like themes, authentication, or language settings. Redux is a powerful state management library designed for large and complex applications where many components need to share and update state in a predictable way. Zustand is a lightweight and modern state management library that offers a simpler API than Redux while still providing global state management with less boilerplate code. The choice depends on the size and complexity of the application.
+
+One-Line Interview Answer:
+
+Context API is best for simple global state, Redux is ideal for large and complex applications, and Zustand provides lightweight global state management with minimal boilerplate.
+
+next
+16. What is Hydration in React?
+
+Answer:
+
+Hydration is the process of attaching React's JavaScript to the HTML that was already rendered on the server. It is mainly used with Server-Side Rendering (SSR). When the page loads, users can immediately see the HTML, and then React hydrates it by adding event listeners and making the page fully interactive. This improves the initial loading speed while still providing a dynamic React application.
+
+One-Line Interview Answer:
+
+Hydration is the process of attaching React to server-rendered HTML, making the page interactive without re-rendering it from scratch.
+
+next
+17. What are some common React security best practices?
+
+Answer: React provides protection against many security issues, but developers should still follow best practices to build secure applications. Avoid using dangerouslySetInnerHTML unless absolutely necessary, as it can expose the application to Cross-Site Scripting (XSS) attacks. Always validate and sanitize user input, never store sensitive information like tokens or passwords in the client-side code, use HTTPS for secure communication, and keep dependencies updated. Authentication and authorization should always be handled securely on the server, not just in the frontend.
+
+18. What are Error Boundaries in React?
+
+Answer: Error Boundaries are React components that catch JavaScript errors occurring in their child component tree during rendering, lifecycle methods, and constructors. Instead of crashing the entire application, they display a fallback UI, allowing the rest of the application to continue working. Error Boundaries are created using Class Components by implementing componentDidCatch() and getDerivedStateFromError(). They do not catch errors inside event handlers, asynchronous code, or server-side rendering.
