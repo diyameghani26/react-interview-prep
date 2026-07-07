@@ -119,3 +119,10 @@ Answer: Dynamic Routes in React Router allow you to create routes with dynamic U
 
 Answer: Protected Routes are routes that can only be accessed by authenticated or authorized users. Before rendering a protected page, React checks whether the user is logged in or has the required permissions. If the user is authenticated, they are allowed to access the route; otherwise, they are redirected to a login page or an unauthorized page. Protected Routes are commonly implemented using React Router, authentication state, and components like Navigate.
 
+21. What are WebSockets and when would you use them in React?
+
+Answer: WebSockets are a communication protocol that provides a persistent, two-way connection between the client and the server. Unlike HTTP, where a new request is made for every interaction, WebSockets keep the connection open, allowing data to be sent and received instantly in real time. In React, WebSockets are commonly used for applications that require live updates, such as chat applications, live notifications, stock market dashboards, multiplayer games, and real-time collaboration tools.
+
+22. Why are Keys important in React Lists?
+
+Answer: Keys are special attributes that help React uniquely identify elements in a list. They allow React to determine which items have been added, removed, or updated, making the reconciliation process more efficient. By using unique and stable keys, React can update only the affected list items instead of re-rendering the entire list, which improves performance. It is recommended to use unique IDs as keys rather than array indexes, especially when the list can change dynamically.
