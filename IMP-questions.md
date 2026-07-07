@@ -110,3 +110,12 @@ Answer: React provides protection against many security issues, but developers s
 18. What are Error Boundaries in React?
 
 Answer: Error Boundaries are React components that catch JavaScript errors occurring in their child component tree during rendering, lifecycle methods, and constructors. Instead of crashing the entire application, they display a fallback UI, allowing the rest of the application to continue working. Error Boundaries are created using Class Components by implementing componentDidCatch() and getDerivedStateFromError(). They do not catch errors inside event handlers, asynchronous code, or server-side rendering.
+
+19. What are Dynamic Routes in React Router?
+
+Answer: Dynamic Routes in React Router allow you to create routes with dynamic URL parameters, making it possible to display different content using the same route structure. They are defined using a colon (:) before the parameter name, such as /users/:id. The parameter value can be accessed inside the component using the useParams() Hook. Dynamic routes are commonly used for user profiles, product details, blog posts, and other pages where the content changes based on the URL.
+
+20. What are Protected Routes in React?
+
+Answer: Protected Routes are routes that can only be accessed by authenticated or authorized users. Before rendering a protected page, React checks whether the user is logged in or has the required permissions. If the user is authenticated, they are allowed to access the route; otherwise, they are redirected to a login page or an unauthorized page. Protected Routes are commonly implemented using React Router, authentication state, and components like Navigate.
+
