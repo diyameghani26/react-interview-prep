@@ -126,3 +126,11 @@ Answer: WebSockets are a communication protocol that provides a persistent, two-
 22. Why are Keys important in React Lists?
 
 Answer: Keys are special attributes that help React uniquely identify elements in a list. They allow React to determine which items have been added, removed, or updated, making the reconciliation process more efficient. By using unique and stable keys, React can update only the affected list items instead of re-rendering the entire list, which improves performance. It is recommended to use unique IDs as keys rather than array indexes, especially when the list can change dynamically.
+
+23. What are Compound Components in React?
+
+Answer: Compound Components are a design pattern in React where multiple components work together to provide a shared and flexible functionality. Instead of passing many props to a single component, the parent component manages the shared state, while child components communicate through Context or internal logic. This pattern makes components more reusable, easier to customize, and cleaner to use. It is commonly used in components like Tabs, Accordions, Modals, Menus, and Dropdowns.
+
+24. What is React DevTools and how does it help developers?
+
+Answer:  React DevTools is a browser extension that helps developers inspect and debug React applications. It allows you to view the component hierarchy, inspect props, state, and Hooks, identify unnecessary re-renders, and monitor component updates. React DevTools makes debugging easier by providing insights into how components are rendered and how data flows through the application.
