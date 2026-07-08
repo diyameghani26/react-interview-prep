@@ -134,3 +134,19 @@ Answer: Compound Components are a design pattern in React where multiple compone
 24. What is React DevTools and how does it help developers?
 
 Answer:  React DevTools is a browser extension that helps developers inspect and debug React applications. It allows you to view the component hierarchy, inspect props, state, and Hooks, identify unnecessary re-renders, and monitor component updates. React DevTools makes debugging easier by providing insights into how components are rendered and how data flows through the application.
+
+25. What is React Strict Mode?
+
+Answer: React Strict Mode is a development tool that helps developers identify potential problems in a React application. It does not affect the production build or render any UI. Instead, it provides warnings about unsafe lifecycle methods, deprecated APIs, unexpected side effects, and other best practice issues. In React 18, Strict Mode may intentionally render components twice in development to help detect bugs and ensure components behave correctly.
+
+26. How can you implement Theme Switching in React?
+
+Answer: Theme Switching in React allows users to switch between different themes, such as light mode and dark mode. It is commonly implemented using State or the Context API to store the current theme and apply different styles based on its value. For a better user experience, the selected theme can also be saved in localStorage, so the user's preference is preserved even after refreshing or reopening the application.
+
+27. How do you test React applications?
+
+Answer: React applications are commonly tested using Jest and React Testing Library (RTL). Jest is a JavaScript testing framework used to write and run tests, while React Testing Library helps test React components by simulating how users interact with the application. Developers can test component rendering, user interactions, API calls, and application behavior to ensure the application works correctly and to prevent bugs when making changes.
+
+28. What is a Higher-Order Component (HOC) in React?
+
+Answer: A Higher-Order Component (HOC) is an advanced React pattern used to reuse component logic. It is a function that takes a component as an argument and returns a new component with additional functionality or behavior. HOCs are commonly used for features like authentication, authorization, logging, and data fetching without modifying the original component. They help keep code reusable and separate business logic from UI components.
