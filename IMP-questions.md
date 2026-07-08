@@ -150,3 +150,11 @@ Answer: React applications are commonly tested using Jest and React Testing Libr
 28. What is a Higher-Order Component (HOC) in React?
 
 Answer: A Higher-Order Component (HOC) is an advanced React pattern used to reuse component logic. It is a function that takes a component as an argument and returns a new component with additional functionality or behavior. HOCs are commonly used for features like authentication, authorization, logging, and data fetching without modifying the original component. They help keep code reusable and separate business logic from UI components.
+
+29. What is forwardRef in React and when would you use it?
+
+Answer: forwardRef is a React API that allows a parent component to pass a ref to a child component, giving the parent direct access to the child's DOM element or component instance. It is commonly used in reusable components like custom input fields, buttons, and modals where the parent needs to perform actions such as focusing an input, scrolling to an element, or triggering animations. Without forwardRef, refs cannot be passed directly to functional components.
+
+30. Explain the React Component Lifecycle.
+
+Answer: The React Component Lifecycle refers to the different stages a component goes through from its creation to its removal from the DOM. These stages are Mounting (when the component is created and added to the DOM), Updating (when props or state change and the component re-renders), and Unmounting (when the component is removed from the DOM). In functional components, these lifecycle stages are managed using the useEffect Hook.
