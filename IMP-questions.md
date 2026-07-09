@@ -158,3 +158,7 @@ Answer: forwardRef is a React API that allows a parent component to pass a ref t
 30. Explain the React Component Lifecycle.
 
 Answer: The React Component Lifecycle refers to the different stages a component goes through from its creation to its removal from the DOM. These stages are Mounting (when the component is created and added to the DOM), Updating (when props or state change and the component re-renders), and Unmounting (when the component is removed from the DOM). In functional components, these lifecycle stages are managed using the useEffect Hook.
+
+31. What is JSX in React?
+
+Answer: JSX (JavaScript XML) is a syntax extension for JavaScript that allows developers to write HTML-like code inside JavaScript. It makes React components easier to read and write. JSX is not understood directly by browsers, so it is transpiled into React.createElement() calls by tools like Babel before execution.
